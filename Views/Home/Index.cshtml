@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <style>
+        img.contrast {
+            -webkit-filter: contrast(100%); /*filt dla safari*/
+            filter: contrast(100%); /* filtr  dla reszty przeglądarek */
+            transition-property: filter; /* ustawienie, dla jakich elementów będzie wykonywana animacja przejścia */
+            transition-duration: 2s; /* czas animacji */
+            transition-timing-function: linear; /* sposób realizacji animacji - liniowy */
+        }
+
+            img.contrast:hover /* zdarzenie najechania kursora myszy na znacznik img z atrybutem class*/ {
+                -webkit-filter: contrast(350%); /* docelowa wartość animacji dla filtra (Safari 6.0 - 9.0) */
+                filter: contrast(350%);
+                /* docelowa wartość animacji dla filtra */
+        }
+    </style>
+    <div class="text-center">
+        <h1 class="display-4">Aplikacja dla sympatyków humoru</h1>
+        <p>najlepsze żarty do znalezienia w localhoście.</p>
+        <img class="contrast" src="https://www.tygodnikpowszechny.pl/files/styles/660x420/public/000010.jpg?itok=gtC6dEeL" alt="panorama" style="display:block;margin: auto; width: 50%;height: 50%; border: 1px solid #aaaaaa;border-radius: 50%;padding: 5px;box-shadow: 0 0 10px 10px rgba(200, 200, 200, 0.5);" />
+
+        <p><font face="Verdana, sans-serif" size="1">ha ha ha</font></p>
+    </div>
+    
